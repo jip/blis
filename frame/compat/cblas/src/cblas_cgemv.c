@@ -146,7 +146,7 @@ void cblas_cgemv(enum CBLAS_ORDER order,
       if (TransA == CblasConjTrans)
       {
          if (x != (const float *)X) free(x);
-         if (N > 0)
+         if (M > 0 && N > 0)
          {
             do
             {
